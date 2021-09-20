@@ -3,7 +3,7 @@
 This repo provides the list of files and baseline recipe for the CLAP dataset. 
 
 ## Software Setup Instructions
-These recipe are fine-tuned with [XLSR/wav2vec2.0](https://huggingface.co/transformers/model_doc/wav2vec2.html) style models as an ASR framework. Please use HuggingFace baseline [CLSRIL](https://huggingface.co/Harveenchadha/wav2vec2-pretrained-clsril-23-10k) as the baseline model for fine-tuning experiments and reproducing the baseline results.
+These recipes are fine-tuned with [XLSR/wav2vec2.0](https://huggingface.co/transformers/model_doc/wav2vec2.html) style models as an ASR framework. Please use HuggingFace baseline [CLSRIL](https://huggingface.co/Harveenchadha/wav2vec2-pretrained-clsril-23-10k) as the baseline model for fine-tuning experiments and reproducing the baseline results.
 
 The baseline code has been modified from the standard huggingface fine-tuning script that is available [here](https://huggingface.co/blog/fine-tune-xlsr-wav2vec2)
 
