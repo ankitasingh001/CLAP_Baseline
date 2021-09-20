@@ -17,14 +17,14 @@ Please choose the corresponding language and enter your details before the downl
 Each of the language folders contains the csv files used for training and evaluating the models. 
 
 CLAP_baseline
-├── Hindi
-│   ├── Hindi_train_2.5.csv   	-> Contains 2.5 hrs of Hindi audio data File paths used for training
-│   │
-│   └── Hindi_dev.csv         	-> Contains 2 hrs of Hindi audio data File paths used for evaluating
-|
-├── Marathi
-│   ├── Marathi_train_2.5.csv   -> Contains 2.5 hrs of Marathi audio data File paths used for training
-│   │
+├── Hindi																
+│   ├── Hindi_train_2.5.csv   	-> Contains 2.5 hrs of Hindi audio data File paths used for training					
+│   │																	
+│   └── Hindi_dev.csv         	-> Contains 2 hrs of Hindi audio data File paths used for evaluating					
+|																	
+├── Marathi																
+│   ├── Marathi_train_2.5.csv   -> Contains 2.5 hrs of Marathi audio data File paths used for training					
+│   │																	
 │   └── Marathi_dev.csv         -> Contains 2 hrs of Marathi audio data File paths used for evaluating
 |
 ├── Tamil
