@@ -1,0 +1,49 @@
+{
+    "seed": 42,
+    // AUDIO PARAMS
+    "sampling_rate": 16000,
+
+    // VOCABULARY PARAMETERS
+    "vocab": {
+        "vocab_path": "/ankita/XLSR/CLAP/wav2vec2-large-xlsr-hi-clap/vocab.json", //no changes required 
+        "blank": "[PAD]", // blank token for padding
+        "silence": "|", // token between words
+        "unk": "[UNK]" // unk token
+    },
+
+    "batch_size": 3, // Batch size for training.
+    // DATA LOADING
+    "num_loader_workers": 8, // number of training data loader processes. Don't set it too big. 4-8 are goo
+
+    // CACHE
+    "dataset_cache": "../datasets/datasets/",
+
+    // DATASETS
+    "datasets": {
+        "test": {
+            "path": "/ankita/Data/Hindi_clap_2hr_test.csv",
+            "name": "pt",
+            "split": "test[:10]",
+            "text_column": "text", // column that contain the texts one for dataset
+            "path_column": "path", // columns that contain the audio paths one for dataset
+            "files_path": "/ankita/Data/Hindi_Data/Hindi/"
+        }
+
+    },
+    // used only for test 
+    "KenLM": {
+        "kenlm_model_path": "/ankita/XLSR/kenlm/kenlm/build/lm.binary", // Path for KenLM model (change here to point to LM)
+        "lexicon_path": "/ankita/XLSR/kenlm/kenlm/lexicon.lst", //"example/lexicon.lst", // file with all words for limit the decoder search (change here to point to lexicon file)
+        "beam": 2048,
+        "nbest": 100, // return 100 best kenLm candidates
+        "beam_threshold": 25,
+        "lm_weight": 1,
+        "word_score": -1,
+        "sil_weight": 0
+    },
+    "rescore": {
+        "lm_path_or_name": "surajp/gpt2-hindi", // hugging face LM path or name if rescoring is required
+        "KenLM_weight": 0,
+        "ExternalLM_weight": 1
+    }
+}
