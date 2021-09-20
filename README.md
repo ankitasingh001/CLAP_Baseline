@@ -15,7 +15,7 @@ Please choose the corresponding language and enter your details before the downl
 ## Folder Setup
 
 Each of the language folders contains the csv files used for training and evaluating the models. 
-
+```bash
 CLAP_baseline
 ├── Hindi																
 │   ├── Hindi_train_2.5.csv   	-> Contains 2.5 hrs of Hindi audio data File paths used for training					
@@ -44,6 +44,8 @@ CLAP_baseline
         ├── test_final.py     				 -> Modified LM scripts from wav2vecwrapper
         └── config_example_external_LM_rescore.json	 
 	|__ wer.py					 -> WER calculation script from final outputs
+
+```
 
 ## Running the baseline script
 
