@@ -9,7 +9,7 @@ The baseline code has been modified from the standard huggingface fine-tuning sc
 
 ## Data Setup Instructions
 
-The data used for our baseline recipe can be found on our [website](https://www.cse.iitb.ac.in/clap/download_link_challenge.html)
+The data used for our baseline recipe can be found on our [website](https://www.cse.iitb.ac.in/clap/)
 Please choose the corresponding language and enter your details before the download can proceed.
 
 ## Folder Setup
